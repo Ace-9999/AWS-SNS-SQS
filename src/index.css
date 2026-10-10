@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#0B0F19] text-slate-100 overflow-x-hidden;
+  }
+}
+
+/* Custom scrollbar for consoles and tables */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0F172A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* Glowing pulses and accents */
+.pulse-glow-orange {
+  box-shadow: 0 0 15px rgba(236, 114, 17, 0.35);
+}
+
+.pulse-glow-purple {
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.35);
+}
+
+.pulse-glow-pink {
+  box-shadow: 0 0 15px rgba(231, 21, 123, 0.35);
+}
+
+.pulse-glow-emerald {
+  box-shadow: 0 0 15px rgba(16, 185, 129, 0.35);
+}
+
